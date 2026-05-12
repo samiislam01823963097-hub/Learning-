@@ -1,0 +1,18 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#0a1a3a,#0d1f42);color:#fff;transition:all .3s;min-height:100vh}
+body.light-mode{background:#f0f4f8;color:#1e293b}
+.header{background:rgba(10,26,58,.95);backdrop-filter:blur(10px);padding:12px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(37,99,235,.3)}
+.logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.logo img{width:42px;border-radius:10px}
+.sidebar{position:fixed;top:0;left:-280px;width:280px;height:100%;background:#0a1a3a;z-index:200;transition:left .3s;padding:70px 20px 30px;display:flex;flex-direction:column;gap:6px;border-right:1px solid #2563eb;overflow-y:auto}
+.sidebar.open{left:0}
+.sidebar-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:199;display:none}
+.sidebar-overlay.open{display:block}
+.sidebar-item{display:flex;align-items:center;gap:14px;padding:12px 15px;background:transparent;border:none;width:100%;cursor:pointer;border-radius:12px;color:#cbd5e1;font-size:15px;transition:.2s}
+.sidebar-item:hover{background:rgba(37,99,235,.2);color:#fff}
+.dashboard-card{background:rgba(15,42,74,.6);backdrop-filter:blur(10px);border-radius:28px;padding:25px;margin:20px;border:1px solid rgba(37,99,235,.3)}
+.info-box{background:rgba(0,0,0,.2);padding:18px;border-radius:20px;margin-bottom:10px}
+.btn{padding:10px 24px;border-radius:40px;border:none;font-weight:600;cursor:pointer;transition:.2s}
+.btn-primary{background:linear-gradient(135deg,#2563eb,#3b82f6);color:#fff}
+.control-input{width:100%;padding:12px;border-radius:12px;border:none;background:rgba(255,255,255,0.1);color:#fff;margin-bottom:10px}
+.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);background:#fff;color:#0a1a3a;padding:12px 24px;border-radius:50px;z-index:1100}
